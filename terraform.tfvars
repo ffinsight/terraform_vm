@@ -1,5 +1,5 @@
 resource_group_name         = "my_terraform_rg"
-resource_group_location     = "East US"
+resource_group_location     = "East US 2"
 virtual_network_name        = "vnet-devd"
 pub-subnet_name             = "frontend-sub"
 priv-subnet_name            = "backend-sub"
