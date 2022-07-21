@@ -117,6 +117,12 @@ resource "azurerm_storage_account" "storage" {
   }
 }
 
+resource "azurerm_storage_container" "container" {
+  name                  = var.container_storage_name
+  storage_account_name  = azurerm_storage_account.storage.name
+  container_access_type = "private"
+}
+
 # Create (and display) an SSH key
 resource "tls_private_key" "example_ssh" {
   algorithm = "RSA"
