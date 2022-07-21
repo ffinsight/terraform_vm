@@ -67,3 +67,8 @@ variable "storage_account_name" {
   type        = string
   description = "storage account name in azure"
 }
+
+variable "container_storage_name" {
+  type        = string
+  description = "container storage name in azure"
+}
